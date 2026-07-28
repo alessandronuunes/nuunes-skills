@@ -22,10 +22,10 @@ Dentro do Claude Code:
 
 ```
 /plugin marketplace add alessandronuunes/nuunes-skills
-/plugin install nuunes@nuunes-skills
+/plugin install nuunes
 ```
 
-A skill fica disponível como `nuunes:escrita-artigos-ptbr`.
+A skill fica disponível como `nuunes:escrita-artigos-ptbr`. Se você tiver outro plugin chamado `nuunes` em outro marketplace, desambigue com `/plugin install nuunes@nuunes`.
 
 ### Com a CLI de skills
 
