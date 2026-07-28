@@ -6,7 +6,7 @@
     },
     "plugins": [
         {
-            "name": "nuunes-skills",
+            "name": "nuunes",
             "source": "./",
             "description": "Escrita em PT-BR com voz humana: ritmo de frase, pontuação correta e voz autoral, com eval objetivo, modo detectar e trava anti-invenção de fatos.",
             "category": "writing",

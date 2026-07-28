@@ -1,6 +1,6 @@
 # nuunes-skills
 
-Coleção de skills reutilizáveis para escrita em português brasileiro.
+Coleção de skills reutilizáveis para escrita em português brasileiro, empacotadas no plugin `nuunes` do Claude Code. Instalou uma vez, toda skill nova que entrar aqui chega sozinha na atualização, com alias namespaced (`nuunes:escrita-artigos-ptbr`) que nunca colide com skill local.
 
 ## Skills
 
@@ -22,8 +22,10 @@ Dentro do Claude Code:
 
 ```
 /plugin marketplace add alessandronuunes/nuunes-skills
-/plugin install nuunes-skills@nuunes-skills
+/plugin install nuunes@nuunes-skills
 ```
+
+A skill fica disponível como `nuunes:escrita-artigos-ptbr`.
 
 ### Com a CLI de skills
 
