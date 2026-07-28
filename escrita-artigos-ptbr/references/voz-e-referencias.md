@@ -47,6 +47,25 @@ Vale em qualquer registro:
 - **Imperfeição de estilo proposital.** Começar frase com "E" ou "Mas". Um fragmento curto
   para ênfase, no lugar certo. Isso é escolha de estilo, não erro de gramática.
 
+## Calibração com textos do próprio autor
+
+As referências abaixo dão o teto do "bem escrito em brasileiro"; os textos do próprio
+autor dão a voz *dele*. Se o usuário fornecer amostras do que escreveu (post,
+newsletter, até mensagem longa de WhatsApp — o formato não importa, importa ser ele
+sem pose), extraia **padrões observáveis**, nunca uma "descrição de estilo". Estilo é
+vago; padrão é verificável:
+
+- tamanho médio de frase e de parágrafo, e onde ele costuma quebrar linha;
+- se usa contração ("pra", "tá", "né") e com que frequência;
+- como abre e como fecha os textos;
+- palavras e expressões que aparecem em quase todo texto;
+- o que ele nunca faz (emoji? gíria? hashtag? travessão?).
+
+Liste os padrões extraídos, confirme com o usuário e escreva mirando essa lista. Em
+caso de conflito, ela passa por cima das referências externas: o objetivo é soar como
+o autor, não como o Akita. Duas ou três amostras já calibram; com uma só, use-a como
+norte e avise o usuário de que a calibração está rasa.
+
 ## Referências de estilo
 
 - **Imprensa brasileira de opinião (colunas, cartas ao leitor).** Melhor modelo de

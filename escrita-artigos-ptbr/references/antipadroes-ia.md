@@ -70,9 +70,13 @@ O modelo fecha resumindo o que já disse, sem acrescentar nada:
 - "Em resumo, vimos que..."
 - "Agora que você já sabe X, está pronto para Y!"
 - "Espero que este artigo tenha sido útil."
+- Pergunta retórica autorespondida: "E você, está preparado para essa mudança? Se
+  seguir esses passos, com certeza sim." A pergunta que o próprio texto responde na
+  frase seguinte não é conversa com o leitor; é encenação.
 
 **No lugar:** arremate com opinião assumida, um próximo passo real, uma provocação ou uma
-pergunta ao leitor. O fecho é onde a voz do autor deve estar mais forte, não mais fraca.
+pergunta genuína ao leitor — daquelas que ficam abertas de verdade. O fecho é onde a voz
+do autor deve estar mais forte, não mais fraca.
 
 ## 5. Inflação de importância
 
@@ -98,6 +102,15 @@ avisando que aquilo é importante.
 - **"Imagine que...":** abertura de exemplo genérico. Prefira um exemplo real e específico.
 - **Voz passiva desnecessária:** "foi observado que", "pode-se notar que". Assuma o
   sujeito: "eu percebi", "a gente viu".
+- **Muletas de peso:** "panorama", "robusto", "fundamental", "crucial", "essencial"
+  usados como enchimento, para dar gravidade a uma frase que não provou nada. Se a
+  coisa é crucial, mostre a consequência de ela faltar; a palavra sozinha não segura.
+- **Rotação de sinônimos:** chamar a mesma coisa de "agente", depois "assistente",
+  depois "ferramenta" na mesma seção. Humano escolhe um nome e fica com ele; repetir
+  o nome certo não é pobreza vocabular, é clareza.
+- **Abertura de garganta:** "aqui está a questão", "a verdade é que", "e é aí que
+  entra o X", "o que ninguém te conta". Frases que anunciam o insight em vez de
+  entregá-lo. Corte o anúncio e comece direto pelo insight.
 
 Cuidado com o oposto: nem todo conectivo é proibido, e "bora"/"vamos ver" na voz certa
 soam humanos. O que denuncia é o **excesso mecânico e a repetição**, não a existência da
@@ -113,6 +126,12 @@ repetida em cada seção. Isso deixa o texto com cara de gabarito.
   Ideia que tem fluxo e causa vira parágrafo, não bullet.
 - Negrito com moderação, para um destaque de verdade — não para "otimizar".
 - Deixe alguns parágrafos correrem sem subtítulo. Nem toda seção precisa de cabeçalho.
+- **Title Case Em Títulos:** "Como Configurar O Seu Primeiro Deploy" não existe em
+  português; é importação direta do inglês e entrega o texto na hora. Em PT-BR, só a
+  primeira palavra e nomes próprios levam maiúscula: "Como configurar o seu primeiro
+  deploy".
+- **Emoji decorativo:** 🚀 no título, ✅ em cada bullet. Em artigo, nenhum — a menos
+  que o autor use e peça.
 
 ## 8. Neutralidade estéril
 

@@ -159,8 +159,10 @@ uma micro-expectativa que segura o leitor:
 O bug era o de sempre: fuso horário.
 ```
 
-Ótimo para fechar um parágrafo puxando o leitor para a revelação. Sem exagero, para não
-virar tique.
+Ótimo para fechar um parágrafo puxando o leitor para a revelação. Mas atenção à dose,
+porque a "revelação com dois-pontos" é um *tell* catalogado de IA em qualquer idioma:
+uma por artigo é estilo; uma por seção é tique de máquina. Fora desse uso dramático,
+os dois-pontos seguem servindo normalmente para listas e explicações.
 
 ## 8. Parágrafo: tamanho e transição
 
