@@ -1,0 +1,20 @@
+{
+    "name": "nuunes-skills",
+    "owner": {
+        "name": "Alessandro Nuunes",
+        "url": "https://github.com/alessandronuunes"
+    },
+    "plugins": [
+        {
+            "name": "nuunes-skills",
+            "source": "./",
+            "description": "Escrita em PT-BR com voz humana: ritmo de frase, pontuação correta e voz autoral, com eval objetivo, modo detectar e trava anti-invenção de fatos.",
+            "category": "writing",
+            "keywords": [
+                "escrita",
+                "pt-br",
+                "humanizar"
+            ]
+        }
+    ]
+}
