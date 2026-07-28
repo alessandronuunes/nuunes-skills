@@ -120,6 +120,10 @@ costurar o período longo.
 - **Entre verbo e complemento:** ~~`O time entregou, a feature no prazo.`~~
 - **Antes de "que" em oração restritiva:** `O dev que entende de fila resolve isso rápido.`
   (Compare com a explicativa, entre vírgulas: `Esse dev, que entende de fila, resolveu.`)
+- **Entre duas orações longas que já têm vírgula interna:** ~~`A IA escreve frases do
+  mesmo tamanho, num padrão importado do inglês, a boa prosa faz o contrário, corre em
+  períodos longos.`~~ O leitor perde a fronteira entre as frases. Aí o sinal é o ponto
+  e vírgula ou o próprio ponto (ver a escada de sinais na seção 5).
 
 ## 5. Ponto e vírgula: costurar sem cortar
 
@@ -133,6 +137,21 @@ com ";":    A migração rodou e o banco não reclamou; fiquei desconfiado por i
 
 Serve também para separar itens longos de uma enumeração que já tem vírgulas dentro.
 Dois ou três por artigo já dão o efeito.
+
+**A escada de sinais (para não consertar staccato criando erro).** A tentação de quem
+caça staccato é trocar ponto por vírgula às cegas, e isso produz um vício pior que o
+original. A regra, alinhada com a norma culta:
+
+- Orações **curtas e paralelas** podem se ligar por vírgula ("Chegou, sentou, começou
+  a discursar") — é a coordenação assindética, legítima em português e ótima para
+  enumerações de efeito.
+- Entre duas orações **longas, que já carregam vírgulas internas**, o sinal é o ponto
+  e vírgula ou o próprio ponto; a vírgula ali produz a frase que tropeça em si mesma.
+- Numa **enumeração de itens longos** com vírgula dentro, os itens se separam por
+  ponto e vírgula, senão o leitor não vê onde um termina e o outro começa.
+
+Consertar staccato é costurar com subordinação, conjunção e ponto e vírgula (seção 2),
+nunca rebaixar o ponto a vírgula.
 
 ## 6. Travessão: no máximo um por artigo
 
@@ -162,7 +181,9 @@ O bug era o de sempre: fuso horário.
 Ótimo para fechar um parágrafo puxando o leitor para a revelação. Mas atenção à dose,
 porque a "revelação com dois-pontos" é um *tell* catalogado de IA em qualquer idioma:
 uma por artigo é estilo; uma por seção é tique de máquina. Fora desse uso dramático,
-os dois-pontos seguem servindo normalmente para listas e explicações.
+os dois-pontos seguem servindo normalmente para listas e explicações. E não repita
+dois-pontos dentro do mesmo período: a gramática tolera, mas o resultado confunde;
+quebre em dois períodos ou troque o segundo por vírgula.
 
 ## 8. Parágrafo: tamanho e transição
 
