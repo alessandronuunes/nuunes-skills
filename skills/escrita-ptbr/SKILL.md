@@ -1,9 +1,10 @@
 ---
-name: escrita-artigos-ptbr
+name: escrita-ptbr
 description: >
-  Escreve e revisa artigos de blog em português brasileiro que soam escritos por
+  Escreve e revisa textos em português brasileiro que soam escritos por
   uma pessoa de verdade, não por IA. Use SEMPRE que o usuário pedir para escrever,
-  rascunhar, revisar, reescrever ou "humanizar" um artigo, post de blog, tutorial,
+  rascunhar, revisar, reescrever ou "humanizar" um artigo, post de blog ou de rede
+  social (LinkedIn, X), tutorial, newsletter, e-mail,
   guia ou texto longo em português — mesmo que ele não diga explicitamente
   "humanizar" ou "sem cara de IA". Também acione quando o usuário reclamar que um
   texto "parece feito por IA", "tem muito ponto", "está robótico", pedir para
@@ -12,9 +13,9 @@ description: >
   pontuação correta e voz autoral — os três sinais que mais denunciam texto de
   máquina em português.
 ---
-# Escrita de Artigos em PT-BR (voz humana)
+# Escrita em PT-BR (voz humana)
 
-O objetivo desta skill é produzir artigos técnicos em português brasileiro que um
+O objetivo desta skill é produzir textos em português brasileiro que um
 leitor experiente **não consiga distinguir de um texto escrito à mão**. O público
 padrão é o dev solo brasileiro — muitas vezes com barreira de inglês, cansado de
 tutorial genérico traduzido de LLM.
