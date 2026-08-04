@@ -1,6 +1,6 @@
 {
     "name": "nuunes",
-    "description": "Skills de escrita em português brasileiro: artigos, posts e tutoriais com voz humana, ritmo de frase e pontuação corretos, sem cara de texto gerado por IA.",
+    "description": "Coleção pessoal de skills para Claude Code: escrita em português brasileiro com voz humana e debug de front-end no navegador, entre outras.",
     "author": {
         "name": "Alessandro Nuunes",
         "url": "https://github.com/alessandronuunes"
@@ -13,6 +13,10 @@
         "portugues",
         "humanizar",
         "anti-slop",
-        "writing"
+        "writing",
+        "debug",
+        "browser",
+        "chrome",
+        "front-end"
     ]
 }

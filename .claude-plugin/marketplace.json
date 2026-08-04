@@ -1,6 +1,6 @@
 {
     "name": "nuunes",
-    "description": "Skills de escrita em português brasileiro com voz humana: ritmo de frase, pontuação e voz autoral, sem cara de texto gerado por IA.",
+    "description": "Coleção pessoal de skills para Claude Code: escrita em português brasileiro com voz humana, debug de front-end no navegador e mais.",
     "owner": {
         "name": "Alessandro Nuunes",
         "url": "https://github.com/alessandronuunes"
@@ -9,12 +9,15 @@
         {
             "name": "nuunes",
             "source": "./",
-            "description": "Escrita em PT-BR com voz humana: ritmo de frase, pontuação correta e voz autoral, com eval objetivo, modo detectar e trava anti-invenção de fatos.",
-            "category": "writing",
+            "description": "Skills reutilizáveis do dia a dia: escrita em PT-BR com voz humana e eval objetivo, e debug de front-end no Chrome até a causa raiz.",
+            "category": "productivity",
             "keywords": [
                 "escrita",
                 "pt-br",
-                "humanizar"
+                "humanizar",
+                "debug",
+                "browser",
+                "chrome"
             ]
         }
     ]
