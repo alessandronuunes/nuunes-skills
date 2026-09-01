@@ -153,36 +153,29 @@ As regras acima miram o post de blog técnico médio (~1000–2000 palavras). Aj
 
 ## Checklist final (rode antes de entregar)
 
-Leia o texto uma última vez e confirme:
+Este checklist cobre só o que é julgamento de leitura. O que dá para contar —
+travessão, Title Case, conectivo-muleta repetido, aberturas e fechos clichê,
+contraste binário, fidelidade factual — saiu daqui e vive no `eval.md`, que não se
+engana contando. Aqui, releia com o ouvido e confirme:
 
-- [ ] O texto corre em períodos longos; frases curtas aparecem só como ênfase
-      pontual, nunca como padrão. Nenhuma sequência de 3+ frases curtas uniformes.
+- [ ] O texto corre em períodos longos, e a frase curta aparece só como ênfase
+      pontual. O eval mede a sequência de curtas; aqui é o ouvido: a prosa corre?
 - [ ] Várias frases começam pela circunstância (tempo, lugar, condição) seguida de
       vírgula, e não direto no sujeito.
-- [ ] A abertura entra numa dor, cena ou pergunta concreta, e não em "No mundo..."
-      / "Na era..." / "No cenário atual...".
-- [ ] Nenhum conectivo-muleta de IA repetido ("além disso", "vale ressaltar",
-      "é importante notar que", "em suma", "dessa forma"). Ver lista completa em
-      `references/antipadroes-ia.md`.
-- [ ] Nenhuma estrutura contrastiva batida ("não se trata apenas de X, mas de Y").
-- [ ] O fecho não é um resumo genérico ("portanto, fica claro que..."); ele
-      arremata com opinião, próximo passo ou uma pergunta genuína ao leitor —
-      nunca uma pergunta retórica que o próprio texto acabou de responder.
-- [ ] Pelo menos um exemplo específico e verificável (número, nome de arquivo,
-      erro real, projeto real), e todos vindos do usuário ou do texto original —
-      nenhum inventado.
-- [ ] Títulos e subtítulos sem Title Case: só a primeira palavra e nomes próprios
-      em maiúscula.
-- [ ] Vírgula não separa sujeito de predicado nem verbo de complemento.
-- [ ] No máximo um travessão no artigo inteiro (idealmente zero).
+- [ ] A abertura entra numa dor, cena ou pergunta concreta.
+- [ ] O fecho arremata com opinião, próximo passo ou uma pergunta genuína ao
+      leitor, e não com um resumo do que o texto já disse.
+- [ ] Tem pelo menos um exemplo específico e verificável (número, nome de arquivo,
+      erro real, projeto real).
+- [ ] A vírgula não separa sujeito de predicado nem verbo de complemento.
 - [ ] Dá para ouvir uma pessoa por trás: tem primeira pessoa e opinião assumida.
 
 Se algum item falhar, volte e corrija antes de entregar. A gramática perfeita não
 salva um texto sem ritmo e sem voz.
 
-Depois do checklist, rode `eval.md`. O checklist é releitura sua, e modelo relendo
-o próprio texto tende a se aprovar; o eval é contagem e grep, e contagem não se
-engana.
+Depois do checklist, rode `eval.md` — ele é a contagem e o grep que este checklist
+deixou de fora de propósito. Checklist é releitura sua, e modelo relendo o próprio
+texto tende a se aprovar; o eval não se engana.
 
 ## Arquivos de referência
 
