@@ -70,7 +70,10 @@ Olhe cada linha de título (`#`, `##`, `###`). Em português, só a primeira pal
 nomes próprios levam maiúscula. "Como Configurar O Seu Primeiro Deploy" FALHA;
 "Como configurar o seu primeiro deploy" PASSA.
 
-## 8. Ritmo: sem trem de frases curtas
+## 8. Ritmo: sem trem de frases curtas (só prosa corrida)
+
+Este item vale para prosa corrida (artigo, newsletter, e-mail longo). Em texto
+funcional (PR, commit, issue), pule: lá a frase direta é o certo.
 
 Palavras por frase, em ordem, ignorando títulos, listas e blocos de código:
 

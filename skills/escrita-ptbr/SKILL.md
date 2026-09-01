@@ -4,8 +4,9 @@ description: >
   Escreve e revisa textos em português brasileiro que soam escritos por
   uma pessoa de verdade, não por IA. Use SEMPRE que o usuário pedir para escrever,
   rascunhar, revisar, reescrever ou "humanizar" um artigo, post de blog ou de rede
-  social (LinkedIn, X), tutorial, newsletter, e-mail,
-  guia ou texto longo em português — mesmo que ele não diga explicitamente
+  social (LinkedIn, X), tutorial, newsletter, e-mail, guia, texto longo, descrição
+  de PR, mensagem de commit, resposta em issue ou code review, ou qualquer frase
+  ou parágrafo curto em português — mesmo que ele não diga explicitamente
   "humanizar" ou "sem cara de IA". Também acione quando o usuário reclamar que um
   texto "parece feito por IA", "tem muito ponto", "está robótico", pedir para
   melhorar o ritmo e a pontuação de um texto em PT-BR, ou pedir para auditar ou
@@ -21,9 +22,9 @@ padrão é o dev solo brasileiro — muitas vezes com barreira de inglês, cansa
 tutorial genérico traduzido de LLM.
 
 O maior denunciador de texto de IA em português **não é uma palavra específica**;
-é o *ritmo*. A máquina escreve frases todas do mesmo tamanho, quebradas em pontos
-secos, sem subordinação. O olho brasileiro treinado percebe na hora: parece uma
-lista de tópicos disfarçada de parágrafo. Corrigir isso é 70% do trabalho.
+é o *ritmo*, e corrigi-lo é 70% do trabalho na prosa longa (Regra 1). Em texto
+funcional curto (PR, commit, resposta em issue) a régua muda: lá o que denuncia é
+a cerimônia e o clichê, não a falta de subordinação. Ver *Ajustes por gênero*.
 
 ## Modos de operação
 
@@ -38,13 +39,19 @@ estraga o resultado:
   humano e entregue, junto do texto, a lista do que mudou e por quê. O que o
   usuário escreveu de propósito (uma gíria, um fragmento, uma repetição de
   efeito) é escolha de estilo, não erro a corrigir.
+- **Humanizar rápido.** O usuário trouxe um trecho curto (um parágrafo, uma
+  resposta, uma descrição de PR) e só quer que perca a cara de IA, sem cerimônia.
+  Aplique direto as Regras centrais e os padrões de
+  `references/antipadroes-ia.md`, devolva o texto refeito e pare aí: sem
+  esqueleto, sem relatório, sem eval. Se o usuário quiser saber o que mudou,
+  ele pede.
 - **Detectar.** O usuário quer saber se um texto tem cara de IA, sem alterá-lo.
   Não edite nada: devolva um relatório apontando o trecho exato (cite a linha ou
   a frase), o padrão nomeado do catálogo e a sugestão de correção. Padrão nomeado
   com trecho citado é evidência; "parece IA" é chute.
 
 Nos modos revisar e detectar, pule as fases 1 a 3 do fluxo e vá direto para as
-passagens de referência (fases 4 a 6).
+passagens de referência (fases 4 a 6). No humanizar rápido, pule o fluxo inteiro.
 
 ## Fluxo de trabalho
 
@@ -87,8 +94,12 @@ referência; aqui fica o essencial.
 
 Em português, a boa prosa corre em períodos longos, costurados por vírgula e
 subordinação. A frase curta é rara e proposital: fecha um raciocínio com ênfase, depois
-de três ou quatro períodos longos. O vício de IA é o oposto, com uma ideia por frase e
-ponto atrás de ponto, tudo do mesmo tamanho.
+de três ou quatro períodos longos. O vício de IA é o oposto: frases todas do mesmo
+tamanho, quebradas em pontos secos, sem subordinação. Parece uma lista de tópicos
+disfarçada de parágrafo, e o olho brasileiro treinado percebe na hora.
+
+Esta regra vale para a prosa corrida (artigo, newsletter, e-mail longo). Em texto
+funcional curto ela inverte; ver *Ajustes por gênero*.
 
 **Antes (staccato, cara de IA):**
 > O deploy quebrou. Eu não sabia o motivo. Fui olhar os logs. Não tinha nada claro.
@@ -150,6 +161,14 @@ As regras acima miram o post de blog técnico médio (~1000–2000 palavras). Aj
 - **Post de opinião / carreira:** puxe mais a primeira pessoa e a anedota; menos
   listas, mais parágrafo corrido.
 - **Post curto / nota:** ritmo ainda importa; corte conectivos-muleta primeiro.
+- **PR, commit, issue, code review (texto funcional):** aqui a Regra 1 inverte.
+  Frase direta ganha de período longo, porque quem lê está revisando, não
+  passeando. O que continua valendo com força total: especificidade (o arquivo, o
+  número do bug, o porquê da mudança), zero cerimônia de IA, zero emoji, e
+  primeira pessoa quando couber ("troquei X por Y porque Z quebrava em
+  produção"). Commit segue a convenção do repositório. Os sinais próprios desse
+  gênero estão na seção 9 de `references/antipadroes-ia.md`. No eval, pule o
+  item 8 (ritmo); o resto vale.
 
 ## Checklist final (rode antes de entregar)
 

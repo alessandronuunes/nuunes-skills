@@ -15,6 +15,7 @@ padrões é *tell* de estrutura e vocabulário; o *tell* de ritmo está em
 6. [Vocabulário e vícios de LLM](#6-vocabulário-e-vícios-de-llm)
 7. [Excesso de estrutura (SEO slop)](#7-excesso-de-estrutura-seo-slop)
 8. [Neutralidade estéril](#8-neutralidade-estéril)
+9. [Cerimônia de PR e commit](#9-cerimônia-de-pr-e-commit)
 
 ---
 
@@ -149,3 +150,19 @@ O *tell* mais profundo, e o mais difícil de corrigir com find-and-replace:
 
 Se o texto está impecável e mesmo assim soa de máquina, quase sempre o problema mora
 aqui: falta gente por trás.
+
+## 9. Cerimônia de PR e commit
+
+Em texto funcional a IA não erra por staccato; erra por cerimônia. Sinais:
+
+- **Abertura burocrática:** "Este PR tem como objetivo...", "O presente commit
+  visa...". Comece pelo que mudou: "Troca X por Y para corrigir Z".
+- **Bullet-spam:** cinco bullets de meia linha dizendo o que uma frase diria.
+  Bullet é para itens de fato paralelos; o resto vira frase corrida.
+- **Resumo que repete o diff:** listar arquivo por arquivo o que o diff já
+  mostra. O texto do PR existe para dizer o que o diff não diz: o porquê, o
+  risco, o que testar.
+- **Voz passiva de changelog:** "Foram implementadas as seguintes melhorias",
+  "Realizados ajustes em...". Assuma o sujeito ("adicionei", "corrigi") ou siga
+  o padrão de verbo do repositório ("Adiciona", "Corrige").
+- **Emoji e enfeite:** 🚀 no título, ✅ em cada linha de checklist. Nenhum.
