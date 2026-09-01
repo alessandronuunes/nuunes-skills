@@ -161,6 +161,16 @@ As regras acima miram o post de blog técnico médio (~1000–2000 palavras). Aj
 - **Post de opinião / carreira:** puxe mais a primeira pessoa e a anedota; menos
   listas, mais parágrafo corrido.
 - **Post curto / nota:** ritmo ainda importa; corte conectivos-muleta primeiro.
+- **Página de site / post que quer ranquear (SEO/GEO):** tudo acima vale, mais
+  um contrato de ordem, porque motor de resposta (ChatGPT, Perplexity, AI
+  Overview) recorta uma seção e cita, e a seção precisa sobreviver ao recorte.
+  Cada seção responde a pergunta do próprio heading já na primeira ou segunda
+  frase, com contexto e nuance vindo depois, e se sustenta lida sozinha: nomeie
+  o sujeito (o nome da empresa ou do produto), sem "ela" ou "a empresa"
+  apontando para a seção anterior. Isso não revoga o ritmo — a resposta na
+  primeira frase pode ser um período longo e bem costurado; o que muda é a
+  ordem (fato antes do preparo), não o tamanho da frase. Se o projeto tiver um
+  contrato de SEO próprio, ele detalha o recorte.
 - **PR, commit, issue, code review (texto funcional):** aqui a Regra 1 inverte.
   Frase direta ganha de período longo, porque quem lê está revisando, não
   passeando. O que continua valendo com força total: especificidade (o arquivo, o
