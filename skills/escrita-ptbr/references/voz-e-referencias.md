@@ -62,8 +62,10 @@ vago; padrão é verificável:
 - o que ele nunca faz (emoji? gíria? hashtag? travessão?).
 
 Liste os padrões extraídos, confirme com o usuário e escreva mirando essa lista. Em
-caso de conflito, ela passa por cima das referências externas: o objetivo é soar como
-o autor, não como o Akita. Duas ou três amostras já calibram; com uma só, use-a como
+caso de conflito, ela passa por cima das referências externas e também dos tetos
+fixos do `eval.md`: se o autor usa travessão em cada parágrafo, ou fecha post com
+emoji, a taxa da amostra vira o teto. O objetivo é soar como o autor, não como o
+Akita, e não como a régua da skill. Duas ou três amostras já calibram; com uma só, use-a como
 norte e avise o usuário de que a calibração está rasa.
 
 ## Referências de estilo

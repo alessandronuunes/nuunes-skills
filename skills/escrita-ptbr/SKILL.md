@@ -38,17 +38,28 @@ estraga o resultado:
   os vícios de ritmo, mexa só no que falhou, preserve intacto o que já está
   humano e entregue, junto do texto, a lista do que mudou e por quê. O que o
   usuário escreveu de propósito (uma gíria, um fragmento, uma repetição de
-  efeito) é escolha de estilo, não erro a corrigir.
+  efeito) é escolha de estilo, não erro a corrigir; as seções 21 e 22 de
+  `references/antipadroes-ia.md` dizem o que não marcar e o que preservar.
+  Depois do rascunho da revisão, responda duas perguntas antes de fechar: "o que
+  ainda soa de máquina?" e "a reescrita adicionou ou perdeu algum fato, nome,
+  número, data ou afirmação?". Qualquer perda ou acréscimo é erro.
+  Quando o usuário apontar um **arquivo** em vez de colar o texto, edite só a
+  prosa dentro dele: bloco de código, frontmatter, dados, tabelas e alvos de link
+  ficam intocados. Grave o texto final no arquivo e devolva no chat só um resumo
+  curto do que mudou.
 - **Humanizar rápido.** O usuário trouxe um trecho curto (um parágrafo, uma
   resposta, uma descrição de PR) e só quer que perca a cara de IA, sem cerimônia.
   Aplique direto as Regras centrais e os padrões de
   `references/antipadroes-ia.md`, devolva o texto refeito e pare aí: sem
-  esqueleto, sem relatório, sem eval. Se o usuário quiser saber o que mudou,
-  ele pede.
+  esqueleto, sem relatório, sem eval. A única conferência que fica é a do item
+  9 do `eval.md`, feita de cabeça: nada inventado, nada perdido. Se o usuário
+  quiser saber o que mudou, ele pede.
 - **Detectar.** O usuário quer saber se um texto tem cara de IA, sem alterá-lo.
   Não edite nada: devolva um relatório apontando o trecho exato (cite a linha ou
   a frase), o padrão nomeado do catálogo e a sugestão de correção. Padrão nomeado
-  com trecho citado é evidência; "parece IA" é chute.
+  com trecho citado é evidência; "parece IA" é chute. Antes de marcar, passe pela
+  seção 21 de `references/antipadroes-ia.md`: um sinal isolado não condena, e o
+  veredito precisa dizer quantos padrões apareceram juntos na mesma passagem.
 
 Nos modos revisar e detectar, pule as fases 1 a 3 do fluxo e vá direto para as
 passagens de referência (fases 4 a 6). No humanizar rápido, pule o fluxo inteiro.
@@ -145,6 +156,11 @@ Primeira pessoa, opinião declarada, e a liberdade de começar frase com "E" ou 
 Humano tem preferência e erra de propósito para dar ênfase. Texto neutro, sem
 nenhuma opinião nem anedota, cheira a máquina — mesmo impecável.
 
+A exceção é o texto de referência: README, documentação, docstring, comentário de
+código, texto legal. Ali o registro é neutro e a primeira pessoa forçada vira
+ruído. Nesses gêneros, tirar a cerimônia de IA e a especificidade continuam
+valendo; a personalidade, não. Não invente opinião onde o gênero não pede.
+
 ### 5. Código dentro do artigo
 
 Identificadores, nomes de variáveis, funções e classes ficam em **inglês**;
@@ -209,10 +225,13 @@ texto tende a se aprovar; o eval não se engana.
 ## Arquivos de referência
 
 - `eval.md` — checagens objetivas de passa ou não passa, rodadas sobre o texto
-  final antes de entregar (obrigatório nos três modos que produzem texto).
+  final antes de entregar (obrigatório em escrever e revisar; no humanizar
+  rápido só o item 9).
 - `references/pontuacao-e-ritmo.md` — regras de vírgula, ponto, ponto e vírgula,
   travessão, dois-pontos e, principalmente, como construir ritmo (leia ao escrever).
 - `references/antipadroes-ia.md` — catálogo dos clichês, conectivos e estruturas que
-  denunciam IA em português (leia na passagem anti-IA).
+  denunciam IA em português (leia na passagem anti-IA), incluindo a adaptação
+  para PT-BR dos padrões da página "Signs of AI writing" da Wikipédia inglesa e
+  a lista do que não marcar e do que preservar.
 - `references/voz-e-referencias.md` — voz autoral, público-alvo, calibração com
   textos do próprio autor e blogs brasileiros de referência para calibrar tom.

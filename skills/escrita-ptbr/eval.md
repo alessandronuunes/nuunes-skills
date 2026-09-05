@@ -19,6 +19,9 @@ grep -o '—' artigo.md | wc -l
 ```
 
 Confira também `–` e ` - ` usados como travessão. PASSA se o total for 0 ou 1.
+Exceção: se o usuário forneceu amostra da própria escrita e ela usa travessão,
+o teto vira a taxa da amostra (conte lá e compare). A voz do autor passa por
+cima do teto; a ausência de amostra, não.
 
 ## 2. Aberturas clichê: zero
 
@@ -40,7 +43,7 @@ parágrafo termina com pergunta retórica que o texto já respondeu — isso tam
 ## 4. Conectivo-muleta repetido: no máximo 1 de cada
 
 ```bash
-for c in 'além disso' 'vale ressaltar' 'vale destacar' 'é importante notar' 'é importante ressaltar' 'dessa forma' 'desse modo' 'sendo assim' 'em suma' 'ou seja' 'nesse sentido'; do
+for c in 'além disso' 'vale ressaltar' 'vale destacar' 'é importante notar' 'é importante ressaltar' 'cabe destacar' 'cabe ressaltar' 'dessa forma' 'desse modo' 'sendo assim' 'em suma' 'ou seja' 'nesse sentido' 'a fim de' 'devido ao fato' 'tem a capacidade de' 'no tocante a' 'no que tange' 'neste momento' 'em termos de' 'quando se trata de'; do
   n=$(grep -io "$c" artigo.md | wc -l | tr -d ' ')
   [ "$n" -gt 1 ] && echo "FALHA: '$c' aparece $n vezes"
 done
@@ -87,11 +90,58 @@ frase curta existe, mas como soco isolado.
 
 ## 9. Fidelidade factual (manual, obrigatório)
 
-Liste cada fato, nome, número, data, citação e anedota do texto e aponte de onde
-veio: do pedido do usuário, do texto original ou de um `[PREENCHER]` que ele
-respondeu. PASSA se nada foi inventado por você. Um único detalhe fabricado FALHA o
-eval inteiro, por mais bonito que o texto tenha ficado.
+Duas listas, nas duas direções:
+
+- **Nada inventado.** Liste cada fato, nome, número, data, citação e anedota do
+  texto final e aponte de onde veio: do pedido do usuário, do texto original ou
+  de um `[PREENCHER]` que ele respondeu.
+- **Nada perdido.** No modo revisar, liste cada afirmação do texto original e
+  confirme que sobreviveu à reescrita. Encurtar, fundir e
+  reordenar pode; sumir com uma afirmação, não.
+
+PASSA se nada foi inventado por você e nada do original se perdeu. Um único
+detalhe fabricado ou uma afirmação perdida FALHA o eval inteiro, por mais bonito
+que o texto tenha ficado. Este é o único item que o modo humanizar rápido também
+roda, de cabeça, antes de devolver o trecho.
 
 ## 10. Emoji decorativo: zero
 
 PASSA se não houver emoji no texto, a menos que o usuário tenha pedido.
+
+## 11. Resíduo de chatbot: zero
+
+```bash
+grep -inE '^(claro|com certeza|certamente)[!,] |ótima pergunta|espero (ter ajudado|que (ajude|esta mensagem))|fico à disposição|não hesite em|quer que eu|posso continuar|aqui está (um|uma)|segue abaixo|até a data do meu|último treinamento|informações (específicas )?não estão (amplamente )?disponíveis' artigo.md
+```
+
+PASSA se não houver nenhuma ocorrência. Ver seção 15 de
+`references/antipadroes-ia.md`.
+
+## 12. Fonte vaga: zero sem nome
+
+```bash
+grep -inE 'especialistas (apontam|afirmam|dizem|concordam)|estudos (mostram|apontam|indicam|comprovam)|pesquisas (mostram|indicam|apontam)|muitos (acreditam|consideram|afirmam)|é amplamente (reconhecido|aceito)|segundo dados do setor' artigo.md
+```
+
+Cada ocorrência precisa de fonte nomeada na mesma frase ou na seguinte (autor,
+link, número do próprio autor). PASSA se todas tiverem ou se não houver nenhuma.
+
+## 13. Gerúndio de análise rasa: no máximo 1
+
+```bash
+grep -ioE ', (destacando|reforçando|evidenciando|demonstrando|contribuindo para|promovendo|refletindo|consolidando|garantindo) ' artigo.md | wc -l
+```
+
+PASSA se o total for 0 ou 1. Ver seção 13 de `references/antipadroes-ia.md`.
+
+## 14. Anglicismo de tradução: zero
+
+```bash
+grep -inE 'tapeçaria|testamento (de|da|do|ao)|sem costura|alavanc|pavimentar o caminho|ressoa(r|m)? com|no final do dia|ao longo da jornada|(vamos|iremos|podemos) (mergulhar|aprofundar|explorar) (n|em)' artigo.md
+grep -nE ', e [[:alpha:]]+[.;]' artigo.md
+```
+
+O primeiro grep tem de voltar vazio. O segundo caça vírgula de Oxford ("A, B, e
+C"): olhe cada linha e confirme que a vírgula antes do "e" só aparece com sujeitos
+diferentes. PASSA se nada indevido sobrar. Ver seção 20 de
+`references/antipadroes-ia.md`.
