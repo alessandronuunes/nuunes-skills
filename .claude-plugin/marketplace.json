@@ -1,6 +1,6 @@
 {
     "name": "nuunes",
-    "description": "Coleção pessoal de skills para Claude Code: escrita em português brasileiro com voz humana, debug de front-end no navegador, code review de PR e mais.",
+    "description": "Coleção pessoal de skills para Claude Code: escrita em português brasileiro com voz humana, debug de front-end no navegador, code review de PR, entrega de ponta a ponta com revisão cega e mais.",
     "owner": {
         "name": "Alessandro Nuunes",
         "url": "https://github.com/alessandronuunes"
@@ -9,7 +9,7 @@
         {
             "name": "nuunes",
             "source": "./",
-            "description": "Skills reutilizáveis do dia a dia: escrita em PT-BR com voz humana e eval objetivo, debug de front-end no Chrome até a causa raiz e review de PR feita com IA.",
+            "description": "Skills reutilizáveis do dia a dia: escrita em PT-BR com voz humana e eval objetivo, debug de front-end no Chrome até a causa raiz, review de PR feita com IA e entrega de bug ou feature com TDD, revisão cega e merge.",
             "category": "productivity",
             "keywords": [
                 "escrita",
@@ -19,7 +19,10 @@
                 "browser",
                 "chrome",
                 "code-review",
-                "pull-request"
+                "pull-request",
+                "delivery",
+                "tdd",
+                "blind-review"
             ]
         }
     ]

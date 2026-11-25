@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: sizes-large-approved-spec-two-repos
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  Large; starts from the approved spec instead of writing a new one; Sonnet session because the plan is decided; library PR first, owner tags, consumer raises the constraint last; consumer work starts in parallel against the current version; each PR gets its own review and verification; the session merges into develop each PR of this repository that passed and does not wait for the tag, and never touches main or the tag.
