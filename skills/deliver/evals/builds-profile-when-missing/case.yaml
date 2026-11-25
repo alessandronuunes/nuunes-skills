@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: builds-profile-when-missing
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  With no .claude/deliver.md, the plan builds the profile from .claude/agents, CLAUDE.md and the hooks, names the repo's agents, finds the push gate, says what it would ask the owner, and saves the result under .scratch/ for the owner.

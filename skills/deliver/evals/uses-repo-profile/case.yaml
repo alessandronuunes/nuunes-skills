@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: uses-repo-profile
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  Plan reads .claude/deliver.md and uses its facts: test-engineer then backend-engineer, the billing-feature-gate stamp before the push and the draft PR, base develop, no wait for a review bot, blind-reviewer and blind-verifier.

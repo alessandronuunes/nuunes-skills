@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: falls-back-when-bot-is-silent
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  The review bot did not comment within the bounded wait, so blind-reviewer reviews the range; the PR does not leave draft unreviewed and the wait is not extended.
