@@ -37,7 +37,7 @@ Arquivos:
 
 ### deliver (Entrega de ponta a ponta)
 
-Leva um bug, feature, ticket ou spec até o fim: dimensiona o trabalho (pequeno, médio ou grande), escolhe o modelo mais barato que ainda é seguro para a sessão e para cada agente, e segue o ritual do tamanho com TDD visível no git, revisão e verificação feitas por agentes que nunca viram a conversa, fix rounds em lote (no máximo três) e merge na branch base quando tudo passou. A sessão lidera e delega; quem escreve código e teste são os agentes. Nada depende de o dono testar à mão, e o relatório final começa com `STATUS: MERGED`, `READY` ou `BLOCKED`.
+Leva um bug, feature, ticket ou spec até o fim: dimensiona o trabalho (pequeno, só documentos, médio ou grande), escolhe o modelo mais barato que ainda é seguro para a sessão e para cada agente, e segue o ritual do tamanho com TDD visível no git, revisão e verificação feitas por agentes que nunca viram a conversa, fix rounds em lote (no máximo três) e merge na branch base quando tudo passou. As tarefas são agrupadas em lotes de até quatro: o lote é construído inteiro rodando só os testes afetados, e as checagens completas, a revisão, a verificação e o CI rodam uma vez, no fim. A sessão lidera e delega; quem escreve código e teste são os agentes. Nada depende de o dono testar à mão, e o relatório final começa com `STATUS: MERGED`, `READY` ou `BLOCKED`.
 
 A skill guarda o processo; os fatos de cada repo (qual agente faz cada papel, comandos, gates antes do push, branch base, bot de review, método de merge) ficam no perfil do repo, `.claude/deliver.md`. O formato do perfil está em `skills/deliver/references/profile.md`; sem perfil, a skill monta um a partir do repo e propõe ao dono.
 

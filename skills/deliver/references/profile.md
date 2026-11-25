@@ -24,7 +24,8 @@ Every heading is present in every profile. A repo that lacks the thing writes "n
 - Setup, once per shell: <PATH export, toolchain; or none>
 - Test environment, per agent: <up command, down command; or none>
 - Affected tests (inner loop): <command>
-- Full checks (verifier and gate): <commands>
+- Full checks (end of batch, verifier and gate): <commands, with the runner's parallel and quiet flags; the time they took when last measured>
+- Slow tests kept out of the inner loop: <group or paths, and who runs them; or none>
 
 ## Git and PR
 
@@ -64,7 +65,7 @@ The roles table lists only the roles the repo has an agent for. `blind-reviewer`
 |---|---|
 | The profile | Build it from the repo (SKILL.md, step 3). |
 | The merge line, or a profile the session built | Merge is "owner" until the owner writes the line in `.claude/deliver.md`. The method the session found goes in the report as a proposal. |
-| An agent for a role | `general-purpose`, with the repo's `CLAUDE.md` and the role's rules in the brief. It inherits the session model, so note it in the report. A repo with no agents at all (a small library) runs every role this way. |
+| An agent for a role (none in the repo) | `general-purpose`, with the repo's `CLAUDE.md` and the role's rules in the brief. It inherits the session model, so note it in the report. A repo with no agents at all (a small library) runs every role this way. |
 | `blind-reviewer`, `blind-verifier`, `ci-watcher` or `design-critic` | They ship with the `nuunes` plugin (as `nuunes:blind-reviewer` and so on). Outside the plugin they exist only if the owner copied the four files to `~/.claude/agents/` or to the repo's `.claude/agents/`. Without them: review with a fresh `general-purpose` given only the spec, the range and the checklist; verify with another one in a detached worktree running the full checks; wait for CI with a foreground `gh run watch <id> --exit-status`. Say in the report that the review ran on the session model. |
 | `blind-verifier`'s commands | Its definition carries no repo's checks. Always put the profile's full checks and test-environment command in its brief and tell it to run those. Without them it runs the repo's full lint, typecheck, test and build suite as found in `CLAUDE.md` and the package scripts, and says so in its report. |
 | A model-guard hook (`.claude/hooks/agent-model-guard.sh` in a repo that has one) | Nothing refuses an expensive model. Leave `model` off every Agent call and check each agent's frontmatter pin once; an agent with no pin inherits the session model. |

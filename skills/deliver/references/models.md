@@ -2,16 +2,18 @@
 
 Each agent's model is pinned in its frontmatter, so nobody chooses it per call. Never pass `model` on an Agent call. The four generic agents (`blind-reviewer`, `blind-verifier`, `ci-watcher`, `design-critic`) ship with this plugin already pinned as the table says. Where the repo has a hook such as `.claude/hooks/agent-model-guard.sh` (a repo may or may not have one), it refuses a model above the pin and allows one below it. Agents started inside `Workflow` scripts bypass the hook, so those scripts must not pass `model` either.
 
+Effort is pinned the same way (`effort:` in the frontmatter). Sonnet agents run at `medium`: without a pin they inherit the owner's setting, often `high`. Raise one role to `high` only after its work brought more findings than usual.
+
 Measured on three PRs of one project (about $138 API-equivalent): Opus was 76% of the cost. An engineer on Opus alone cost about $25, while the orchestrating session was about 8%. Execution moved to Sonnet. Judgment stayed on Opus, where a miss costs more than the tokens.
 
 | Role | Agent | Model |
 |---|---|---|
 | shape ports and files | `Plan` (built-in) | inherits the session (run it from an Opus session) |
-| primary blind review | `blind-reviewer` | opus |
+| primary blind review | `blind-reviewer` | opus, effort medium |
 | judgment audits (security of the core, migrations and hot-path queries) | the profile's audit agents | opus |
-| code and tests | the profile's testers and engineers | sonnet |
+| code and tests | the profile's testers and engineers | sonnet, effort medium |
 | checklist audits (front-end security, a11y) | the profile's audit agents | sonnet |
-| blind verification | `blind-verifier` | sonnet |
+| blind verification | `blind-verifier` | sonnet, effort medium |
 | UI critique | `design-critic` | sonnet |
 | CI wait and log reading | `ci-watcher` | haiku |
 | broad read-only search | `Explore` | built-in |

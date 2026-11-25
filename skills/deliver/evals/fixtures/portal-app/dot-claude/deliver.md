@@ -17,7 +17,7 @@ Facts the `deliver` skill reads in this repo.
 - Setup, once per shell: none
 - Test environment, per agent: `scripts/test-env.sh up` (prints `export` lines) and `scripts/test-env.sh down`, from the agent's worktree
 - Affected tests (inner loop): `pnpm test:changed`
-- Full checks (verifier and gate): `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`
+- Full checks (end of batch, verifier and gate): `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`
 
 ## Git and PR
 

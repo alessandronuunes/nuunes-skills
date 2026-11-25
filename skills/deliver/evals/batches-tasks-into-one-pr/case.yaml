@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: batches-tasks-into-one-pr
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  One batch with the four tasks: each builds with its own RED and GREEN and affected tests only; full checks, review, verification and CI once, on one PR.

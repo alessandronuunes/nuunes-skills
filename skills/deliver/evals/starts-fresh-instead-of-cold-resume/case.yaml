@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: starts-fresh-instead-of-cold-resume
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  A fresh engineer and a fresh blind-reviewer for the round: the idle ones are cold and large. The low finding alone opens no round.
