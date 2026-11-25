@@ -3,4 +3,4 @@ name: holds-merge-on-open-medium
 context:
   scaffold_script: scaffold.sh
 expected_outcome: |
-  No merge while a medium finding is open: one fix prompt to the engineer that holds the context, gate again on the new SHA, delta review by the same reviewer, verifier again because code changed, and only then the push of that exact SHA into develop.
+  No merge while a medium finding is open: one fix prompt to the engineer (resumed while warm, else fresh), gate again on the new SHA, delta review (same reviewer while warm, else a fresh one), verifier again because code changed, and only then the push of that exact SHA into develop.
