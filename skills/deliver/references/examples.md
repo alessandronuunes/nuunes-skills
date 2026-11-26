@@ -14,7 +14,7 @@ Things that look small but are not: deleting or retaining customer data (privacy
 
 > "Depois de trocar de aba, a identificação mostra o assinante de outra conversa."
 
-The cause is unclear and the bug crosses a route and client cache keys. Session on Sonnet. Run `mattpocock-skills:diagnosing-bugs` to a reproducible cause. Then the testers write RED, and the engineers make it GREEN. The security audit runs, because one customer's data could reach another. Draft PR. `blind-reviewer` gets a `REVIEW.md` with a stale-read row. One fix round that gathers the bot's and the reviewer's findings. `blind-verifier` on the final SHA. CI green, `gh pr ready`, merge, then the base branch's own CI run.
+The cause is unclear and the bug crosses a route and client cache keys. Session on Sonnet. Run `mattpocock-skills:diagnosing-bugs` to a reproducible cause, and write the spec with numbered criteria in `.scratch/specs/` from the report. Then the testers write RED, and the engineers make it GREEN. The security audit runs, because one customer's data could reach another. Draft PR. `blind-reviewer` gets a `REVIEW.md` with a stale-read row. One fix round that gathers the bot's and the reviewer's findings. `blind-verifier` on the final SHA. CI green, `gh pr ready`, merge, then the base branch's own CI run.
 
 ## Large
 

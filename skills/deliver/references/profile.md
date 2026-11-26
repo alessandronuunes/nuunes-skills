@@ -14,7 +14,7 @@ Every heading is present in every profile. A repo that lacks the thing writes "n
 | Role | Agent | Scope |
 |---|---|---|
 | tester | <agent> | <paths, or "all"> |
-| engineer | <agent> | |
+| engineer | <agent> | <paths or area per engineer; each one is a lane> |
 | security audit | <agent> | <what it audits> |
 | data audit | <agent> | <migrations, queries> |
 | commit, push, PR | <agent, or "the session"> | |
