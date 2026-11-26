@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: runs-judgment-lanes-in-parallel
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  The audit, blind-reviewer and the bot wait go out together on one SHA; one fix round gathers everything; the deltas go out in one message; the verifier starts after them without waiting for the CI.
