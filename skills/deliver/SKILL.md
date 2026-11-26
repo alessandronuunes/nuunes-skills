@@ -50,7 +50,7 @@ A Small PR never leaves draft, and so never merges, with no review at all: when 
 
 Each batch of a Large job runs the Medium ritual (Documents, when it is only prose) once, for all its tasks together. The job starts from its spec, and there are two ways in:
 
-- **The spec or brief is already approved.** Use it as it is. Read it whole, group its tasks into batches, and ask the owner only where it leaves a decision open, before the first agent starts. A list of PRs in the spec is a list of tasks: group it too, unless the spec says why a PR must land alone. Writing a second spec reopens what the owner already decided.
+- **The spec or brief is already approved.** Use it as it is (numbering its criteria is not rewriting them). Read it whole, group its tasks into batches, and ask the owner only where it leaves a decision open, before the first agent starts. A list of PRs in the spec is a list of tasks: group it too, unless the spec says why a PR must land alone. Writing a second spec reopens what the owner already decided.
 - **No spec yet.** `mattpocock-skills:to-spec` and `to-tickets` are owner-invoked: only the owner can run them (`/mattpocock-skills:to-spec`). Ask for that, or write the spec and the tickets yourself as markdown in `.scratch/specs/` and get the owner's approval before any agent starts.
 
 When the job crosses two repositories (a library and its consumer), follow "Two repositories" in the rules.
