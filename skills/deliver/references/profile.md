@@ -14,7 +14,7 @@ Every heading is present in every profile. A repo that lacks the thing writes "n
 | Role | Agent | Scope |
 |---|---|---|
 | tester | <agent> | <paths, or "all"> |
-| engineer | <agent> | |
+| engineer | <agent> | <paths or area per engineer; each one is a lane> |
 | security audit | <agent> | <what it audits> |
 | data audit | <agent> | <migrations, queries> |
 | commit, push, PR | <agent, or "the session"> | |
@@ -43,6 +43,8 @@ Every heading is present in every profile. A repo that lacks the thing writes "n
 ## CI
 
 <How CI starts for a PR and for the base branch, what it leaves out, runner limits. Or none.>
+
+Optional line: `Known flaky tests: <test, issue>`.
 
 ## Brief notes
 

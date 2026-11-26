@@ -50,7 +50,7 @@ A Small PR never leaves draft, and so never merges, with no review at all: when 
 
 Each batch of a Large job runs the Medium ritual (Documents, when it is only prose) once, for all its tasks together. The job starts from its spec, and there are two ways in:
 
-- **The spec or brief is already approved.** Use it as it is. Read it whole, group its tasks into batches, and ask the owner only where it leaves a decision open, before the first agent starts. A list of PRs in the spec is a list of tasks: group it too, unless the spec says why a PR must land alone. Writing a second spec reopens what the owner already decided.
+- **The spec or brief is already approved.** Use it as it is (numbering its criteria is not rewriting them). Read it whole, group its tasks into batches, and ask the owner only where it leaves a decision open, before the first agent starts. A list of PRs in the spec is a list of tasks: group it too, unless the spec says why a PR must land alone. Writing a second spec reopens what the owner already decided.
 - **No spec yet.** `mattpocock-skills:to-spec` and `to-tickets` are owner-invoked: only the owner can run them (`/mattpocock-skills:to-spec`). Ask for that, or write the spec and the tickets yourself as markdown in `.scratch/specs/` and get the owner's approval before any agent starts.
 
 When the job crosses two repositories (a library and its consumer), follow "Two repositories" in the rules.
@@ -84,6 +84,7 @@ Follow the rules in [references/rules.md](references/rules.md). They hold at eve
 - Never resume an idle agent with a large context: start a fresh one with the findings.
 - The test commit comes before the fix it pins. Check the order before any review.
 - Know the gates before the first push. A repo hook may refuse `git push` or `gh pr create` until a gate has passed for the exact HEAD SHA, so the gate runs before the draft PR exists and again after every fix round. A refused push is answered by running the gate the profile names on the new HEAD.
+- The audits, `blind-reviewer` and the bot's wait go out together on the draft's SHA, then the deltas together; the verifier starts after the deltas, alongside the CI.
 - Gather every finding of a round (review bot, audits, reviewer, verifier) into one fix prompt per lane. Only a high or medium finding or an unmet AC opens a round. At most three rounds, then that task is blocked, leaves the batch, and the job moves to the tasks that do not depend on it.
 - Open the PR as a draft, against the profile's base branch, when the whole batch is built and the gates passed. `gh pr ready` only at the end.
 - A branch with an open PR gets its CI from the `pull_request` event. Wait with `ci-watcher`, never by reading logs yourself.

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: cites-spec-criteria-by-id
+context:
+  scaffold_script: scaffold.sh
+expected_outcome: |
+  The brief of the tester pastes the spec criteria verbatim with their identifiers and rephrases none.
