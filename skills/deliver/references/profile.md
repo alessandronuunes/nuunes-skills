@@ -44,6 +44,8 @@ Every heading is present in every profile. A repo that lacks the thing writes "n
 
 <How CI starts for a PR and for the base branch, what it leaves out, runner limits. Or none.>
 
+Optional line: `Known flaky tests: <test, issue>`.
+
 ## Brief notes
 
 <What a brief must say when the task touches a given area: a skill to read first, copy rules. Or none.>
